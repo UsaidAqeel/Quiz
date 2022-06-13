@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cont {
+    width: 40%;
+    color: white !important;
+    background: rgb(14, 101, 201);
+    background: linear-gradient(14deg, rgba(14, 101, 201, 1) 0%, rgba(0, 203, 255, 1) 100%);
+
+}
+
+.cont h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.input {
+    width: 100% !important;
+}
+
+.input label input {
+    display: flex;
+    padding: 5px;
+    font-size: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white !important;
+}
+::placeholder{
+    color: white;
+}
+.input label {
+    width: 70%;
+    padding: 0px;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0px 8px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+small i {
+ padding: 10px 5px 0px 5px;
+ color: white;
+ margin-top: 10px;
+}
+.div{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.submit {
+    padding: 10px 43px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    display: none;
+}
+.quiz{
+    background: rgb(14,101,201);
+background: linear-gradient(14deg, rgba(14,101,201,1) 0%, rgba(0,203,255,1) 100%);
+     width: 55%;
+}
+.name{
+    padding: 10px;
+    color: white !important;
+    border-bottom: 1px solid lightgray;
+}
+.qus p{
+    color: white;
+    padding: 10px;
+}
+.main{
+    text-align: center;
+    font-size: 4rem;
+    display: none;
+    padding: 10px;
+}
+.opt{
+    padding: 10px;
+}
+.opt li{
+    padding: 10px;
+   color: black;
+   cursor: pointer;
+     list-style: none;
+   margin: 5px 0;
+   background-color: rgb(242, 242, 242);
+   border-radius: 5px;
+}
+.uni{
+    padding: 10px 43px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    visibility: hidden;
+}
+.btn p{
+    color: white;
+    margin: 10px;
+}
+.btn{
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: space-between;
+}
+.foo1{
+    background-color: red !important;
+    color: white !important;
+
+}
+.foo{
+    background-color: green !important;
+    color: white !important;
+}
+.event{
+    pointer-events: none;
+}
+.done{
+    display: none;
+}
+.done h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+}
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+.result{
+    width: 60%;
+    padding: 20px;
+    background: rgb(14,101,201);
+    background: linear-gradient(14deg, rgba(14,101,201,1) 0%, rgba(0,203,255,1) 100%);
+}
+.result p{
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+.i{
+    display: flex;
+    justify-content: center;
+}
+.i i{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 15px ;
+    margin: 20px;
+}
+.result h1{
+    color: gold;
+    text-align: center;
+    font-size: 6rem;
+}
+
+@media only screen and (max-width:900px){
+    .quiz{
+        width: 80%;
+    }
+    .cont{
+        width: 80%;
+    }
+    .result{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:400px){
+    .done h1,.main{
+        font-size: 2.5rem;
+    }
+    .cont{
+        width: 90%;
+    }
+  .quiz{
+    width: 90%;
+  }
+    .box{
+        height: 70vh;
+        width: 100%;
+    }
+    .result{
+        width: 90%;
+    }
+    .done h1{
+        margin-top: 50px
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+     <link rel="stylesheet" href="style.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body onload=" load()">
+    <div class="center" >
+        <div class="cont">
+            <h1>Sign Up</h1>
+            <form action="Javascript:void(0)">
+                <div class="input">
+                    <label for="">
+                        <small><i class="fa-solid fa-user"></i></small>
+                        <input type="text" placeholder="Enter Your Name">
+                    </label>
+                <label for="">
+                    <small><i class="fa-solid fa-at"></i></small>
+                    <input type="email" required placeholder="Enter Your Email">
+                </label>
+            </div>
+            <div class="div">
+                <button onclick="foo() " class="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+<h1 class="main" id="main" >Quiz Application  </h1>
+    <section class="box"id="display" >
+        <div  class="quiz">
+            <div class="name">
+                <p class="fill">Name : </p>
+                <p class="fill">E-mail : </p>
+            </div>
+                <div class="qus">
+                    <p id="qus">Qus : </p>
+                </div>
+                <div class="opt" id="opt">
+                    <li onclick="check(this)">1 option</li>
+                    <li onclick="check(this)">2 option</li>
+                    <li onclick="check(this)">3 option</li>
+                    <li onclick="check(this)">4 option</li>
+                </div>
+                <div class="btn">
+                     <p id="get">1 / 7</p>
+                    <button id="btn" onclick="button()" class="uni">Submit</button>
+                </div>
+            </div>
+    </section>
+
+    <section class="done" id="done">
+        <h1>Result</h1>
+        <div class="cen">
+            <div  class="result">
+                <h1><i class="fa-solid fa-trophy"></i></h1>
+                 <p id="result">Total Numbar : </p>
+                 <p id="correct">Correct Answer : </p>
+        <p class="share"><i class="fa-solid fa-share-nodes"></i> Share</p>
+      <div class="i">
+
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>
